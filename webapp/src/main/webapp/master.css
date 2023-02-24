@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+.login{
+    background-image: url("bg-gradient.jpg");
+}
+.t-title {
+    color: white;
+    padding: 2.5px;
+    border: none;
+    margin: 2.5px;
+    font-family: PT Sans;
+}
+.topbar{
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    border: none;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+.center {
+    text-align: center;
+}
+.float-box {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+    background-color: white;
+    height: 500px;
+    width: 800px;
+    border-radius: 15px;
+}
+.col {
+    float: left;
+    width: 50%;
+    height: 500px;
+}
+.bg-col {
+    background-image: url("bg-polygon.jpg");
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.cir-logo-main {
+    border-radius: 50%;
+    padding: 70px;
+}
+.main-head {
+    color: pink;
+    padding: 2px;
+    border: 2px;
+    margin: 2px;
+}
+.animated-border-button {
+  background-color: #263059;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+}
+
+.animated-border-button:before,
+.animated-border-button:after {
+  border: 0 solid transparent;
+  transition: all 0.3s;
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 24px;
+}
+
+.animated-border-button:before {
+  border-top: 2px solid #263059;
+  right: 0;
+  top: -4px;
+}
+
+.animated-border-button:after {
+  border-bottom: 2px solid #263059;
+  bottom: -4px;
+  left: 0;
+}
+
+.animated-border-button:hover:before,
+.animated-border-button:hover:after {
+  width: 100%;
+}
+.form-input,
+.form-input::before {
+    position: inherit;
+    margin-top: 20px;
+    outline: none;
+    border-width: 3px 3px 3px 3px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 5px;
+    height: 30px;
+    width: 240px;
+    color: black;
+    cursor: text;
+}
+.form-input:focus{
+    border-bottom-width: 100%;
+    border-width: 3px 3px 3px 3px;
+    border-style: solid;
+    border-color: #34004b;
+    transition-timing-function: ease;
+}
+.form-input:focus,
+.form-input:not(:placeholder-shown) {
+    border-bottom: 3px solid #34004b;
+    border-top: 3px solid #34004b;
+    border-left: 3px solid #34004b;
+    border-right: 3px solid #34004b;
+    cursor: text;
+}
+.form #form-usrnm,
+.form-input:not(:focus) + #form-usrnm {
+    position: absolute;
+    color: black;
+    top: 140px;
+    left: 482px;
+    font-family: PT Sans;
+    cursor: text;
+    background-color: white;
+    transform: translateY(5%);
+    -ms-transform: translateY(5%);
+    -webkit-transform: translateY(5%);
+    transition: 0.15s ease-in-out;
+}
+.form-input:focus + #form-usrnm,
+.form-input:not(:placeholder-shown) + #form-usrnm {
+    background-color: white;
+    position: absolute;
+    color: #36004b;
+    top: 125px;
+    left: 482px;
+    font-family: PT Sans;
+    transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    -webkit-transform: translateY(-5%);
+    transition: 0.15s ease-in-out;
+    font-size: 12px;
+}
+.form #form-psswd,
+.form-input:not(:focus) + #form-psswd {
+    position: absolute;
+    color: black;
+    top: 215px;
+    left: 482px;
+    font-family: PT Sans;
+    cursor: text;
+    background-color: white;
+    transform: translateY(5%);
+    -ms-transform: translateY(5%);
+    -webkit-transform: translateY(5%);
+    transition: 0.15s ease-in-out;
+}
+.form-input:focus + #form-psswd,
+.form-input:not(:placeholder-shown) + #form-psswd {
+    background-color: white;
+    position: absolute;
+    color: #36004b;
+    top: 202px;
+    left: 482px;
+    font-family: PT Sans;
+    transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    -webkit-transform: translateY(-5%);
+    transition: 0.15s ease-in-out;
+    font-size: 12px;
+}
+.Error {
+    color: red;
+    font-size: 14px;
+    font-family: PT Sans;
+}
